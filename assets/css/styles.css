@@ -1335,6 +1335,11 @@ body {
 .copyright__link {
   display: inline-block;
   color: var(--color-text-body);
+  transition: all 300ms ease-in-out;
+}
+
+.copyright__link:hover {
+  color: var(--color-banner);
 }
 
 .footer__links {
