@@ -10,10 +10,129 @@
     <!-- Cargar estilos -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
 
     <title>Agencia Desarrollo web | José Carmona</title>
   </head>
   <body>
+    <!-- MENU NAVEGACION RESPONSIVE -->
+    <div class="menu-mobile">
+      <header class="menu-mobile__header">
+        <div class="menu-mobile__container-logo">
+          <a href="#" class="menu-boile__link-logo">
+            <img src="./assets/img/logo1.png" alt="logo" class="menu-mobile__logo" />
+          </a>
+        </div>
+
+        <button class="menu-mobile__close">
+          <i class="menu-mobile__icon-close fa-solid fa-xmark"></i>
+        </button>
+      </header>
+
+      <div class="menu-mobile__body">
+        <nav class="menu-mobile__nav">
+          <ul class="menu-mobile__list">
+            <li class="menu-mobile__item">
+              <a href="#" class="menu-mobile__link">Inicio</a>
+            </li>
+
+            <li class="menu-mobile__item">
+              <a href="#" class="menu-mobile__link"
+                >Servicios
+                <i class="fa-solid fa-chevron-down menu-mobile__icon"></i>
+              </a>
+              <ul class="menu-mobile__submenu-mobile">
+                <li class="submenu-mobile__item">
+                  <a href="#" class="submenu-mobile__link">Diseño Web</a>
+                </li>
+
+                <li class="submenu-mobile__item">
+                  <a href="#" class="submenu-mobile__link">Desarrollo Web</a>
+                </li>
+
+                <li class="submenu-mobile__item">
+                  <a href="#" class="submenu-mobile__link">Desarrollo de apps</a>
+                </li>
+
+                <li class="submenu-mobile__item">
+                  <a href="#" class="submenu-mobile__link">Programación</a>
+                </li>
+
+                <li class="submenu-mobile__item">
+                  <a href="#" class="submenu-mobile__link">Consultoría</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-mobile__item">
+              <a href="#" class="menu-mobile__link"
+                >Portafolio
+                <i class="fa-solid fa-chevron-down menu-mobile__icon"></i>
+              </a>
+              <ul class="menu-mobile__submenu-mobile">
+                <li class="submenu-mobile__item">
+                  <a href="#" class="submenu-mobile__link">Diseño Web</a>
+                </li>
+
+                <li class="submenu-mobile__item">
+                  <a href="#" class="submenu-mobile__link">Desarrollo Web</a>
+                </li>
+
+                <li class="submenu-mobile__item">
+                  <a href="#" class="submenu-mobile__link">Desarrollo de apps</a>
+                </li>
+
+                <li class="submenu-mobile__item">
+                  <a href="#" class="submenu-mobile__link">Programación</a>
+                </li>
+
+                <li class="submenu-mobile__item">
+                  <a href="#" class="submenu-mobile__link">Consultoría</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-mobile__item">
+              <a href="#" class="menu-mobile__link"
+                >Blog
+                <i class="fa-solid fa-chevron-down menu-mobile__icon"></i>
+              </a>
+              <ul class="menu-mobile__submenu-mobile">
+                <li class="submenu-mobile__item">
+                  <a href="#" class="submenu-mobile__link">Diseño Web</a>
+                </li>
+
+                <li class="submenu-mobile__item">
+                  <a href="#" class="submenu-mobile__link">Desarrollo Web</a>
+                </li>
+
+                <li class="submenu-mobile__item">
+                  <a href="#" class="submenu-mobile__link">Desarrollo de apps</a>
+                </li>
+
+                <li class="submenu-mobile__item">
+                  <a href="#" class="submenu-mobile__link">Programación</a>
+                </li>
+
+                <li class="submenu-mobile__item">
+                  <a href="#" class="submenu-mobile__link">Consultoría</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-mobile__item">
+              <a href="#" class="menu-mobile__link">Equipo</a>
+            </li>
+
+            <li class="menu-mobile__item">
+              <a href="#" class="menu-mobile__link">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- LAYOUT PRINCIPAL -->
     <div class="layout">
       <!-- MENU -->
       <section class="layout__menu">
@@ -23,6 +142,15 @@
             <a href="#" class="navbar__link-logo">
               <img src="./assets/img/logo1.png" class="navbar__logo-light" />
             </a>
+          </div>
+
+          <!-- BOTON DE MENU RESPONSIVE -->
+          <div class="navbar__mobile-btn">
+            <button class="mobile-btn__wrap">
+              <span class="mobile-btn__line"></span>
+              <span class="mobile-btn__line"></span>
+              <span class="mobile-btn__line"></span>
+            </button>
           </div>
 
           <!-- NAVEGACION -->
@@ -628,10 +756,6 @@
             <article class="clients__item">
               <img class="clients__img" src="./assets/img/brand-1.png" />
             </article>
-
-            <article class="clients__item">
-              <img class="clients__img" src="./assets/img/brand-1.png" />
-            </article>
           </div>
         </div>
 
@@ -732,7 +856,7 @@
 
           <div class="contact__images">
             <div class="contact__thumb contact__thumb--chat">
-              <img src="./assets/img/chat-group.png" class="contact__img" />
+              <img src="./assets/img/chat-group.png" />
             </div>
             <div class="contact__thumb contact__thumb--laptop">
               <img class="contact__img" src="./assets/img/laptop-poses.png" />
