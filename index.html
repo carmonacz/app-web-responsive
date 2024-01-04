@@ -10,11 +10,25 @@
     <!-- Cargar estilos -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/dark.css" /> -->
     <link rel="stylesheet" href="./assets/css/responsive.css" />
 
     <title>Agencia Desarrollo web | José Carmona</title>
   </head>
   <body>
+    <!-- BOTON MODO OSCURO -->
+    <div class="switcher">
+      <button class="switcher__btn">
+        <span class="switcher__icon-light">
+          <i class="fa-solid fa-moon switcher__icon"></i>
+        </span>
+
+        <span class="switcher__icon-dark">
+          <i class="fa-solid fa-lightbulb switcher__icon"></i>
+        </span>
+      </button>
+    </div>
+
     <!-- MENU NAVEGACION RESPONSIVE -->
     <div class="menu-mobile">
       <header class="menu-mobile__header">
@@ -1050,5 +1064,8 @@
     </div>
 
     <!-- Cargar JS -->
+    <script src="./assets/js/menu-mobile.js"></script>
+    <script src="./assets/js/navbar-fixed.js"></script>
+    <script src="./assets/js/dark.js"></script>
   </body>
 </html>
